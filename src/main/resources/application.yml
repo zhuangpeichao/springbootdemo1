@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/news
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+mybatis:
+  mapper-locations: mapper/*.xml
+  type-aliases-package: cn.bdqn.springbootdemo.bean
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
